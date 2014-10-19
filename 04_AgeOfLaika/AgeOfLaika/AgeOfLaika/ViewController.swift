@@ -35,5 +35,28 @@ class ViewController: UIViewController {
         yearsTextField.resignFirstResponder()
     }
 
+    @IBAction func convertRealButtonPress(sender: UIButton) {
+        var yearsConverted:Double = 0.0
+        var conversionRate:Double = 0
+        
+        let isLessOrEqualToTwo = yearsTextField.text.toInt()! <= 2
+        let userInput = Double(yearsTextField.text.toInt()!)
+        //let userInput = Double((yearsTextField.text as NSString).doubleValue)
+    
+        
+        if isLessOrEqualToTwo {
+            conversionRate = 10.5
+            yearsConverted = userInput * 10.5
+        }
+        else {
+            conversionRate = 4
+            yearsConverted = (10.5 * 2) + (userInput - 2) * 4
+        }
+        
+                        
+        dogsYearsLabel.text = "\(yearsConverted) real dogs years."
+        dogsYearsLabel.hidden = false
+        yearsTextField.resignFirstResponder()
+    }
 }
 
