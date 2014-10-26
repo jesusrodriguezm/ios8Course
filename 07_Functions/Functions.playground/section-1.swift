@@ -35,3 +35,24 @@ func turnOffAppliance(applianceName: String, isOn:Bool) {
 }
 
 turnOffAppliance("Stove", false)
+
+func additionFunction(firstArgument:Int, secondArgument:Int) -> Int {
+    let sumOfArguments = firstArgument + secondArgument
+    return sumOfArguments
+}
+
+var additionAnswerOfInreger = additionFunction(2,4)
+let finalAnswer = additionFunction(additionAnswerOfInreger,5)
+println(finalAnswer)
+
+
+
+func helloWorldString() -> String {
+    printHelloWorld()
+    return "Hello World"
+}
+
+var helloWorld = helloWorldString()
+helloWorld = helloWorld + "!"
+
+

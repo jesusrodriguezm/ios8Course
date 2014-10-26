@@ -42,7 +42,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="513" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="442" width="343" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHJ-Vy-uhh">
@@ -51,7 +51,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="542" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="471" width="343" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-Sm-ax9">
@@ -60,7 +60,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="571" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="500" width="343" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2p-vm-DEw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="534" width="343" height="77"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -72,6 +81,7 @@
                                 <exclude reference="ctE-Wa-DqE"/>
                                 <exclude reference="DHJ-Vy-uhh"/>
                                 <exclude reference="yGf-Sm-ax9"/>
+                                <exclude reference="Y2p-vm-DEw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -81,12 +91,14 @@
                                 <include reference="ctE-Wa-DqE"/>
                                 <include reference="DHJ-Vy-uhh"/>
                                 <include reference="yGf-Sm-ax9"/>
+                                <include reference="Y2p-vm-DEw"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="ageLabel" destination="DHJ-Vy-uhh" id="8vk-U2-MV8"/>
                         <outlet property="breedLabel" destination="yGf-Sm-ax9" id="cnb-8K-edV"/>
+                        <outlet property="factLabel" destination="Y2p-vm-DEw" id="iCA-xx-hZn"/>
                         <outlet property="myImageView" destination="CU5-Cg-SJn" id="s7y-sS-fZb"/>
                         <outlet property="nameLabel" destination="ctE-Wa-DqE" id="HL4-IE-0tV"/>
                     </connections>
