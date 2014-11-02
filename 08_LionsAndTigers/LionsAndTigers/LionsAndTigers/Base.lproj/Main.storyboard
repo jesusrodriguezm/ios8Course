@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="itX-XY-0Ve">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="675" id="8Sv-6P-NV3"/>
+                                    <constraint firstAttribute="width" constant="375" id="jAq-zP-nbD"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Sv-6P-NV3"/>
+                                        <exclude reference="jAq-zP-nbD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="675"/>
+                                    <mask key="constraints">
+                                        <include reference="8Sv-6P-NV3"/>
+                                        <include reference="jAq-zP-nbD"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CU5-Cg-SJn">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                </variation>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9di-XM-5fO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -33,7 +50,7 @@
                                     </barButtonItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="622" width="375" height="44.5"/>
+                                    <rect key="frame" x="0.0" y="624" width="375" height="44"/>
                                 </variation>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-Wa-DqE">
@@ -76,6 +93,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="itX-XY-0Ve"/>
                                 <exclude reference="CU5-Cg-SJn"/>
                                 <exclude reference="9di-XM-5fO"/>
                                 <exclude reference="ctE-Wa-DqE"/>
@@ -86,7 +104,8 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="CU5-Cg-SJn"/>
+                                <include reference="itX-XY-0Ve"/>
+                                <exclude reference="CU5-Cg-SJn"/>
                                 <include reference="9di-XM-5fO"/>
                                 <include reference="ctE-Wa-DqE"/>
                                 <include reference="DHJ-Vy-uhh"/>
@@ -99,7 +118,7 @@
                         <outlet property="ageLabel" destination="DHJ-Vy-uhh" id="8vk-U2-MV8"/>
                         <outlet property="breedLabel" destination="yGf-Sm-ax9" id="cnb-8K-edV"/>
                         <outlet property="factLabel" destination="Y2p-vm-DEw" id="iCA-xx-hZn"/>
-                        <outlet property="myImageView" destination="CU5-Cg-SJn" id="s7y-sS-fZb"/>
+                        <outlet property="myImageView" destination="itX-XY-0Ve" id="5xN-dV-Unh"/>
                         <outlet property="nameLabel" destination="ctE-Wa-DqE" id="HL4-IE-0tV"/>
                     </connections>
                 </viewController>
