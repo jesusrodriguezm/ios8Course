@@ -14,6 +14,9 @@
 		232C45601A227A09009E1F7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 232C455E1A227A09009E1F7B /* LaunchScreen.xib */; };
 		232C456C1A227A09009E1F7B /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C456B1A227A09009E1F7B /* TaskItTests.swift */; };
 		232C45761A22844C009E1F7B /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C45751A22844C009E1F7B /* TaskCell.swift */; };
+		234DFC7C1A2A441A00F5C3E7 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DFC7B1A2A441A00F5C3E7 /* TaskModel.swift */; };
+		234DFC7E1A2A467500F5C3E7 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DFC7D1A2A467500F5C3E7 /* TaskDetailViewController.swift */; };
+		234DFC801A2A4D0300F5C3E7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234DFC7F1A2A4D0300F5C3E7 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		232C456A1A227A09009E1F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		232C456B1A227A09009E1F7B /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
 		232C45751A22844C009E1F7B /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		234DFC7B1A2A441A00F5C3E7 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		234DFC7D1A2A467500F5C3E7 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		234DFC7F1A2A4D0300F5C3E7 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,10 @@
 			children = (
 				232C45551A227A09009E1F7B /* AppDelegate.swift */,
 				232C45571A227A09009E1F7B /* ViewController.swift */,
+				234DFC7D1A2A467500F5C3E7 /* TaskDetailViewController.swift */,
+				234DFC7B1A2A441A00F5C3E7 /* TaskModel.swift */,
 				232C45751A22844C009E1F7B /* TaskCell.swift */,
+				234DFC7F1A2A4D0300F5C3E7 /* Date.swift */,
 				232C45591A227A09009E1F7B /* Main.storyboard */,
 				232C455C1A227A09009E1F7B /* Images.xcassets */,
 				232C455E1A227A09009E1F7B /* LaunchScreen.xib */,
@@ -216,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				232C45581A227A09009E1F7B /* ViewController.swift in Sources */,
+				234DFC801A2A4D0300F5C3E7 /* Date.swift in Sources */,
 				232C45761A22844C009E1F7B /* TaskCell.swift in Sources */,
+				234DFC7C1A2A441A00F5C3E7 /* TaskModel.swift in Sources */,
 				232C45561A227A09009E1F7B /* AppDelegate.swift in Sources */,
+				234DFC7E1A2A467500F5C3E7 /* TaskDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +423,7 @@
 				232C45711A227A0A009E1F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232C45721A227A0A009E1F7B /* Build configuration list for PBXNativeTarget "TaskItTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				232C45741A227A0A009E1F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
