@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2315B1191A4B552700D1D703 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315B1181A4B552700D1D703 /* FeedItem.swift */; };
+		2315B11B1A4B765F00D1D703 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315B11A1A4B765F00D1D703 /* FilterViewController.swift */; };
+		2315B11D1A4B7A5700D1D703 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315B11C1A4B7A5700D1D703 /* FilterCell.swift */; };
+		2315B11F1A4DB42B00D1D703 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315B11E1A4DB42B00D1D703 /* FeedItem.swift */; };
+		2315B1221A4E1B0800D1D703 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315B1211A4E1B0800D1D703 /* ProfileViewController.swift */; };
 		23BE21FA1A3CDF620042EBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BE21F91A3CDF620042EBE6 /* AppDelegate.swift */; };
 		23BE21FD1A3CDF620042EBE6 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23BE21FB1A3CDF620042EBE6 /* ExchangeAGram.xcdatamodeld */; };
 		23BE22021A3CDF620042EBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BE22001A3CDF620042EBE6 /* Main.storyboard */; };
@@ -30,7 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2315B1181A4B552700D1D703 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		2315B11A1A4B765F00D1D703 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		2315B11C1A4B7A5700D1D703 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		2315B11E1A4DB42B00D1D703 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
+		2315B1211A4E1B0800D1D703 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		23BE21F41A3CDF620042EBE6 /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BE21F81A3CDF620042EBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BE21F91A3CDF620042EBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2315B1201A4DB45200D1D703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23BE21FB1A3CDF620042EBE6 /* ExchangeAGram.xcdatamodeld */,
+				2315B11E1A4DB42B00D1D703 /* FeedItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		23BE21EB1A3CDF620042EBE6 = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +103,14 @@
 			children = (
 				23BE21F91A3CDF620042EBE6 /* AppDelegate.swift */,
 				23BE221C1A3CE0C90042EBE6 /* FeedViewController.swift */,
+				2315B11A1A4B765F00D1D703 /* FilterViewController.swift */,
+				2315B11C1A4B7A5700D1D703 /* FilterCell.swift */,
+				2315B1211A4E1B0800D1D703 /* ProfileViewController.swift */,
 				23BE221E1A3CE3580042EBE6 /* FeedCell.swift */,
 				23BE22001A3CDF620042EBE6 /* Main.storyboard */,
 				23BE22031A3CDF620042EBE6 /* Images.xcassets */,
 				23BE22051A3CDF620042EBE6 /* LaunchScreen.xib */,
-				23BE21FB1A3CDF620042EBE6 /* ExchangeAGram.xcdatamodeld */,
-				2315B1181A4B552700D1D703 /* FeedItem.swift */,
+				2315B1201A4DB45200D1D703 /* Model */,
 				23BE21F71A3CDF620042EBE6 /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -225,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2315B11D1A4B7A5700D1D703 /* FilterCell.swift in Sources */,
+				2315B11B1A4B765F00D1D703 /* FilterViewController.swift in Sources */,
 				23BE21FA1A3CDF620042EBE6 /* AppDelegate.swift in Sources */,
 				23BE221F1A3CE3580042EBE6 /* FeedCell.swift in Sources */,
 				23BE221D1A3CE0C90042EBE6 /* FeedViewController.swift in Sources */,
-				2315B1191A4B552700D1D703 /* FeedItem.swift in Sources */,
+				2315B11F1A4DB42B00D1D703 /* FeedItem.swift in Sources */,
+				2315B1221A4E1B0800D1D703 /* ProfileViewController.swift in Sources */,
 				23BE21FD1A3CDF620042EBE6 /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
