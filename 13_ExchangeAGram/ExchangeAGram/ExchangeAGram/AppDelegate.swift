@@ -22,7 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let cache = NSURLCache(memoryCapacity: 8 * 1024 * 1024, diskCapacity: 20 * 1024 * 1024, diskPath: nil)
         NSURLCache.setSharedURLCache(cache)
         
+        //Connection to facebook
+        FBLoginView.self
+        FBProfilePictureView.self
+        
         return true
+    }
+    
+    //Connection to Facebook
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
+        return wasHandled
     }
     
     //cleaning up the cache when needed:
